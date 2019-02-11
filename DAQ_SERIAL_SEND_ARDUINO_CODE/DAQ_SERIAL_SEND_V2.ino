@@ -32,12 +32,12 @@ void setup() {
 
   int chipSelectPin = 3; // 3 is good for most things, but Leonardos share SCL with D3.  8 is the other option
 
-  //Set up serial at 256000 bps 
-  SerialConsole.begin(256000);
+  //Set up serial at 230400 bps 
+  SerialConsole.begin(230400);
   while(!SerialConsole);
   
-  // This is the default initialization command
-  ard186xboard1.begin(DEVICE_LTC1863, ARD186X_EEP_ADDR_ZZ, chipSelectPin);
+  // This is the default initialization command, make sure the board number LTC1867 is correct 
+  ard186xboard1.begin(DEVICE_LTC1867, ARD186X_EEP_ADDR_ZZ, chipSelectPin);
   ard186xboard1.setFastSPI(1);
   ard186xboard1.ltc186xChangeChannel(LTC186X_CHAN_SINGLE_0P, 1);
 }
