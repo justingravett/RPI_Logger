@@ -10,7 +10,7 @@ using namespace std;
 
 
 #define COMPORT			24 		// this is '/dev/ttyUSB0' (for arduino) or choose wherever you added '/dev/ttyAMA0' (for raspberry pi UART pins) to the list
-#define BAUDRATE		500000	// or whatever baudrate you want
+#define BAUDRATE		230400	// or whatever baudrate you want
 #define RECEIVE_CHARS	1		// or whatever size of buffer you want to receive
 
 unsigned char incomingData[RECEIVE_CHARS];
