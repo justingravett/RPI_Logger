@@ -21,7 +21,7 @@ LICENSE:
 
 #include <SPI.h>
 #include <Wire.h>
-#include <Ard1863.h>
+#include "Ard1863.h"
 
 
 #define SerialConsole Serial
